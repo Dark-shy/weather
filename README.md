@@ -1,12 +1,12 @@
 ### 简介
 
 ***
-![Uploading image.png…]()
-
+![image](https://github.com/Dark-shy/weather/assets/87113684/f2567675-3c43-410d-8d0f-a9b7c24951e4)
 
 **查看天气的前端页面，调用高德地图的API用来获取天气信息**
 
 **默认获取西安(610100)的天气，在js文件的请求url中可以更改地区**
+
 
 ### 高德API
 
