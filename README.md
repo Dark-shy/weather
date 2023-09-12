@@ -18,7 +18,7 @@
 
 ***
 
-### BUG
+### 接口详细信息
 
-**页面的天气图标是固定的，不能更具天气自动更换。**
+[**API文档**](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)https://lbs.amap.com/api/webservice/guide/api/weatherinfo
 
