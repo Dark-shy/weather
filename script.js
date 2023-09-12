@@ -39,6 +39,97 @@ xhr.onload = function() {
     document.getElementById("week3").innerText = week[data.forecasts[0].casts[3].week];
     document.getElementById("temperature3").innerText = data.forecasts[0].casts[3].daytemp + "℃";
 
+    //通则匹配返回天气结果，与前端天气样式对应
+    // var day1 = "晴";
+    var day2 = "云";
+    var day3 = "雨";
+    var day4 = "雪";
+
+    var cloud = new RegExp('.*' + day2 + '.*', 'i');
+    var rain = new RegExp('.*' + day3 + '.*', 'i'); 
+    var snow = new RegExp('.*' + day4 + '.*', 'i');
+
+
+    switch (data.forecasts[0].casts[0].dayweather) {
+        case "晴":
+            document.getElementById("weather_day_sun").classList.remove("hidden");
+            document.getElementById("weather_day0_sun").classList.remove("hidden");
+            break;
+        case cloud:
+            case"阴":
+            document.getElementById("weather_day_cloud").classList.remove("hidden");
+            document.getElementById("weather_day0_cloud").classList.remove("hidden");
+            break;
+        case rain:
+            document.getElementById("weather_day_rain").classList.remove("hidden");
+            document.getElementById("weather_day0_rain").classList.remove("hidden");
+            break;
+        case snow:
+            document.getElementById("weather_day_snow").classList.remove("hidden");
+            document.getElementById("weather_day0_snow").classList.remove("hidden");
+            break;
+    
+        default:
+            document.getElementById("weather_day_sun").classList.remove("hidden");
+            document.getElementById("weather_day0_sun").classList.remove("hidden");
+            break;
+    }
+
+    switch (data.forecasts[0].casts[1].dayweather) {
+        case "晴":
+            document.getElementById("weather_day1_sun").classList.remove("hidden");
+            break;
+        case cloud:
+            document.getElementById("weather_day1_cloud").classList.remove("hidden");
+            break;
+        case rain:
+            document.getElementById("weather_day1_rain").classList.remove("hidden");
+            break;
+        case snow:
+            document.getElementById("weather_day1_snow").classList.remove("hidden");
+            break;
+    
+        default:
+            document.getElementById("weather_day1_sun").classList.remove("hidden");
+            break;
+    }
+    switch (data.forecasts[0].casts[2].dayweather) {
+        case "晴":
+            document.getElementById("weather_day2_sun").classList.remove("hidden");
+            break;
+        case cloud:
+            document.getElementById("weather_day2_cloud").classList.remove("hidden");
+            break;
+        case rain:
+            document.getElementById("weather_day2_rain").classList.remove("hidden");
+            break;
+        case snow:
+            document.getElementById("weather_day2_snow").classList.remove("hidden");
+            break;
+    
+        default:
+            document.getElementById("weather_day2_sun").classList.remove("hidden");
+            break;
+    }
+
+    switch (data.forecasts[0].casts[3].dayweather) {
+        case "晴":
+            document.getElementById("weather_day3_sun").classList.remove("hidden");
+            break;
+        case cloud:
+            document.getElementById("weather_day3_cloud").classList.remove("hidden");
+            break;
+        case rain:
+            document.getElementById("weather_day3_rain").classList.remove("hidden");
+            break;
+        case snow:
+            document.getElementById("weather_day3_snow").classList.remove("hidden");
+            break;
+    
+        default:
+            document.getElementById("weather_day3_sun").classList.remove("hidden");
+            break;
+    }
 }else{
     //
 }

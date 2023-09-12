@@ -8,13 +8,32 @@
 </head>
 <body background="./001.webp">
 <!-- partial:index.partial.html -->
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
 <div class="container">
   <div class="weather-side">
     <div class="weather-gradient"></div>
     <div class="date-container">
       <h2 class="date-dayname" id="weeks"></h2><span class="date-day" id="date"></span><i class="location-icon" data-feather="map-pin"></i><span class="location" id="city"></span>
     </div>
-    <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+    <div class="weather-container">
+      
+      <div id="weather_day_sun" class="hidden">
+      <i class="weather-icon" data-feather="sun"></i>
+      </div>
+      <div id="weather_day_cloud" class="hidden">
+        <i class="weather-icon" data-feather="cloud"></i>
+      </div>
+      <div id="weather_day_snow" class="hidden">
+        <i class="weather-icon" data-feather="cloud-snow"></i>
+      </div>
+      <div id="weather_day_rain" class="hidden">
+        <i class="weather-icon" data-feather="cloud-rain"></i>
+      </div>
+
       <h1 class="weather-temp" id="temperature"></h1>
       <h3 class="weather-desc" id="weather"></h3>
     </div>
@@ -36,11 +55,67 @@
     <div class="week-container">
       <ul class="week-list">
         <li class="active">
-          <i class="day-icon" data-feather="sun"></i>
+          <div id="weather_day0_sun" class="hidden">
+            <i class="day-icon" data-feather="sun"></i>
+            </div>
+            <div id="weather_day0_cloud" class="hidden">
+              <i class="day-icon" data-feather="cloud"></i>
+            </div>
+            <div id="weather_day0_snow" class="hidden">
+              <i class="day-icon" data-feather="cloud-snow"></i>
+            </div>
+            <div id="weather_day0_rain" class="hidden">
+              <i class="day-icon" data-feather="cloud-rain"></i>
+            </div>
         <span class="day-name" id="week"></span><span class="day-temp" id="temperature0"></span></li>
-        <li><i class="day-icon" data-feather="cloud"></i><span class="day-name" id="week1"></span><span class="day-temp" id="temperature1"></span></li>
-        <li><i class="day-icon" data-feather="cloud-snow"></i><span class="day-name" id="week2"></span><span class="day-temp" id="temperature2"></span></li>
-        <li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name" id="week3"></span><span class="day-temp" id="temperature3"></span></li>
+        <li>
+          
+          <div id="weather_day1_sun" class="hidden">
+            <i class="day-icon" data-feather="sun"></i>
+            </div>
+            <div id="weather_day1_cloud" class="hidden">
+              <i class="day-icon" data-feather="cloud"></i>
+            </div>
+            <div id="weather_day1_snow" class="hidden">
+              <i class="day-icon" data-feather="cloud-snow"></i>
+            </div>
+            <div id="weather_day1_rain" class="hidden">
+              <i class="day-icon" data-feather="cloud-rain"></i>
+            </div>
+          
+          <span class="day-name" id="week1"></span><span class="day-temp" id="temperature1"></span></li>
+        <li>
+
+          <div id="weather_day2_sun" class="hidden">
+            <i class="day-icon" data-feather="sun"></i>
+            </div>
+            <div id="weather_day2_cloud" class="hidden">
+              <i class="day-icon" data-feather="cloud"></i>
+            </div>
+            <div id="weather_day2_snow" class="hidden">
+              <i class="day-icon" data-feather="cloud-snow"></i>
+            </div>
+            <div id="weather_day2_rain" class="hidden">
+              <i class="day-icon" data-feather="cloud-rain"></i>
+            </div>
+
+          <span class="day-name" id="week2"></span><span class="day-temp" id="temperature2"></span></li>
+        <li>
+          
+          <div id="weather_day3_sun" class="hidden">
+            <i class="day-icon" data-feather="sun"></i>
+            </div>
+            <div id="weather_day3_cloud" class="hidden">
+              <i class="day-icon" data-feather="cloud"></i>
+            </div>
+            <div id="weather_day3_snow" class="hidden">
+              <i class="day-icon" data-feather="cloud-snow"></i>
+            </div>
+            <div id="weather_day3_rain" class="hidden">
+              <i class="day-icon" data-feather="cloud-rain"></i>
+            </div>
+          
+          <span class="day-name" id="week3"></span><span class="day-temp" id="temperature3"></span></li>
         <div class="clear"></div>
       </ul>
     </div>
