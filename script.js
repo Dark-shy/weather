@@ -6,7 +6,7 @@ const weeks= ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sun
 var xhr = new XMLHttpRequest();
 
 // 设置请求的类型、URL 以及是否异步
-xhr.open('GET', 'https://restapi.amap.com/v3/weather/weatherInfo?city=610100&key=d3274fa8f3d216c4e3af66ca6ab5f3e0&extensions=all', true);
+xhr.open('GET', 'https://restapi.amap.com/v3/weather/weatherInfo?city=610100&key=<your.KEY>&extensions=all', true);
  // 发送请求
     xhr.send();
 // 监听请求完成的事件
