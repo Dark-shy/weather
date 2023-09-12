@@ -20,5 +20,8 @@
 
 ### 接口详细信息
 
-[**API文档**](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)https://lbs.amap.com/api/webservice/guide/api/weatherinfo
+[**API文档**](https://lbs.amap.com/api/webservice/guide/api/weatherinfo)
+## 天气对照表
+![image](https://github.com/Dark-shy/weather/assets/87113684/d3a3db4b-71a9-4236-9b5e-64539b7673a1)
+
 
